@@ -36,3 +36,28 @@ function addPlanet (event) {
 }
 
 $(".planet-button").click(addPlanet);
+
+/*
+
+ ///  The long and sordid history of Javascript Modules
+ ///  For more, see: http://eloquentjavascript.net/10_modules.html
+
+ var myLibrary = (function () {
+ function greet (name) {
+ console.log("Hello, " + name);
+ }
+
+ function circleArea (radius) {
+ return PI * Math.pow(radius, 2);
+ }
+
+ var PI = 3.14;
+
+ return {
+ greet: greet,
+ circleArea: circleArea
+ };
+
+ })()
+
+ */
